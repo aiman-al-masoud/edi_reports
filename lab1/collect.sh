@@ -1,7 +1,7 @@
 TARGET="www.google.com"
 TRACEROUTE_BUFFER="traceroute$(date +%s).txt"
 
-INTERVAL=2 # in seconds
+INTERVAL=$((5*60))  #every 5 minutes
 
 while true
 do
