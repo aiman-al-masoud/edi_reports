@@ -2,9 +2,10 @@
 \usepackage{fullpage}
 \usepackage{times}
 \usepackage{hyperref}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
 
 \begin{document}
-
 
 
 
@@ -25,7 +26,7 @@ The goal of this work was to determine the average daily peak time of a server, 
 \setcounter{page}{1}
 %Figures and tables must be cited in the text and explained in detail.
 
-\section{Monitoring of Infrastructure}
+\section{Monitoring of a Server's Peak Time}
 %Insert a brief introduction of your first lab experience
 
 
@@ -63,7 +64,21 @@ A script that performs traceroute on a target IP at regular intervals (every 5 m
 %Present and discuss the experimental results that you have obtained
 
 
+\includegraphics{latency_graph}
 
+
+\includegraphics{hops_graph}
+
+
+\begin{enumerate}
+
+\item H1)
+
+\item H2)
+
+\item H3) Was found to be completely false, as the number of dropped packages stayed at a constant 0 all the time. This is most likely due to the fact that the Vantage Point and the Target servers were both owned by Google.
+
+\end{enumerate}
 
 
 
