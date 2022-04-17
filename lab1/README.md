@@ -20,7 +20,7 @@ Using UDP, there is no guarantee that the packets will reach the server, and if 
 
 # Setup
 
-A script that performs traceroute on a target IP at regular intervals (every 10 minutes) will be executed on a vantage point. Then the data will be processed offline.
+A script that performs traceroute on a target IP at regular intervals (every 5 minutes) was executed on a vantage point for a whole week. Then the collected data was processed offline. The vantage point in question was a virtual machine on GCP (Google Cloud Platform).
 
 
 
