@@ -1,0 +1,17 @@
+
+
+The solution: GNU screen. This awesome little tool let's you run a process after you've ssh'ed into your remote server, and then detach from it - leaving it running like it would run in the foreground (not stopped in the background).
+
+So after we've ssh'ed into our GCE VM, we will need to: 1. install GNU screen: apt-get update apt-get upgrade apt-get install screen
+
+    type "screen". this will open up a new screen - kind of similar in look & feel to what "clear" would result in.
+    run the process (e.g.: ./init-dev.sh to fire up a ChicagoBoss erlang server)
+    type: Ctrl + A, and then Ctrl + D. This will detach your screen session but leave your processes running!
+    feel free to close the SSH terminal. whenever you feel like it, ssh back into your GCE VM, and type screen -r to resume your previously detached session.
+    to kill all detached screens, run: screen -ls | grep pts | cut -d. -f1 | awk '{print $1}' | xargs kill
+
+
+
+
+
+https://stackoverflow.com/questions/48221807/google-cloud-instance-terminate-after-close-browser
