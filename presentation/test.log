@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.3.30)  20 APR 2022 14:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.21)  25 APR 2022 16:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -263,83 +263,79 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 46.
+(Font)              <7> on input line 42.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 46.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
-1.
+(Font)              <5> on input line 42.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
+7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-<./images/latency_graph.png, id=52, 448.67625pt x 251.7405pt>
-File: ./images/latency_graph.png Graphic file (type png)
-<use ./images/latency_graph.png>
-Package pdftex.def Info: ./images/latency_graph.png  used on input line 75.
-(pdftex.def)             Requested size: 448.67516pt x 251.73987pt.
-
-Overfull \hbox (20.70729pt too wide) in paragraph at lines 75--76
-[][] 
- []
-
-<./images/hops_graph.png, id=54, 448.074pt x 243.309pt>
-File: ./images/hops_graph.png Graphic file (type png)
-<use ./images/hops_graph.png>
-Package pdftex.def Info: ./images/hops_graph.png  used on input line 81.
-(pdftex.def)             Requested size: 448.07289pt x 243.30841pt.
-
-Overfull \hbox (20.10503pt too wide) in paragraph at lines 81--82
-[][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.84 \item H
-            3) Was found to be completely false, as the number of dropped pa...
-[1
+l.72 \clearpage
+                [1
 
- <./images/latency_graph.png>] [2 <./images/hops_graph.png>]
+] [2
+
+]
+<./images/latency_graph.png, id=63, 693.59125pt x 378.41376pt>
+File: ./images/latency_graph.png Graphic file (type png)
+<use ./images/latency_graph.png>
+Package pdftex.def Info: ./images/latency_graph.png  used on input line 135.
+(pdftex.def)             Requested size: 277.43158pt x 151.36281pt.
+<./images/hops_graph.png, id=65, 690.58pt x 376.40625pt>
+File: ./images/hops_graph.png Graphic file (type png)
+<use ./images/hops_graph.png>
+Package pdftex.def Info: ./images/hops_graph.png  used on input line 142.
+(pdftex.def)             Requested size: 276.2271pt x 150.55983pt.
+ [3
+
+ <./images/latency_graph.png> <./images/hops_graph.png>]
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-07.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+68.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \hbox (73.53214pt too wide) in paragraph at lines 107--108
+Overfull \hbox (73.53214pt too wide) in paragraph at lines 168--169
 [][]$\OT1/pcr/m/n/10 https : / / www . highspeedinternet . com / resources / wh
 y-[]does-[]my-[]internet-[]slow-[]down-[]at-[]night$[] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
-[3
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
+[4
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
  (./test.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 178.
 Package rerunfilecheck Info: File `test.out' has not changed.
 (rerunfilecheck)             Checksum: 31EF91BDC7BE7F91E6A3ABD3BC15140C;701.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
  ) 
 Here is how much of TeX's memory you used:
- 5353 strings out of 483140
- 82749 string characters out of 5965151
- 331559 words of memory out of 5000000
- 20263 multiletter control sequences out of 15000+600000
+ 5362 strings out of 483065
+ 82861 string characters out of 5963550
+ 340995 words of memory out of 5000000
+ 20279 multiletter control sequences out of 15000+600000
  549254 words of font info for 53 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 34i,6n,29p,318b,400s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81 hyphenation exceptions out of 8191
+ 34i,8n,29p,344b,307s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb>
-Output written on test.pdf (4 pages, 102858 bytes).
+Output written on test.pdf (5 pages, 111937 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
+ 99 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
+ 20 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

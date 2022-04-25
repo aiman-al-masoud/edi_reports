@@ -1,1 +1,1 @@
-ssh -i gcp_edi -l aiman 34.133.219.14
+ssh -i key -l user IPADDR
