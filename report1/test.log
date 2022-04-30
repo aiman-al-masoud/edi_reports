@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.21)  25 APR 2022 16:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.21)  30 APR 2022 14:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -281,61 +281,57 @@ l.72 \clearpage
 ] [2
 
 ]
-<./images/latency_graph.png, id=63, 693.59125pt x 378.41376pt>
+<./images/latency_graph.png, id=99, 693.59125pt x 378.41376pt>
 File: ./images/latency_graph.png Graphic file (type png)
 <use ./images/latency_graph.png>
 Package pdftex.def Info: ./images/latency_graph.png  used on input line 135.
 (pdftex.def)             Requested size: 277.43158pt x 151.36281pt.
-<./images/hops_graph.png, id=65, 690.58pt x 376.40625pt>
+<./images/hops_graph.png, id=101, 690.58pt x 376.40625pt>
 File: ./images/hops_graph.png Graphic file (type png)
 <use ./images/hops_graph.png>
 Package pdftex.def Info: ./images/hops_graph.png  used on input line 142.
 (pdftex.def)             Requested size: 276.2271pt x 150.55983pt.
  [3
 
- <./images/latency_graph.png> <./images/hops_graph.png>]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-68.
+ <./images/latency_graph.png> <./images/hops_graph.png>] [4] [5]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
+10.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \hbox (73.53214pt too wide) in paragraph at lines 168--169
+Overfull \hbox (73.53214pt too wide) in paragraph at lines 310--311
 [][]$\OT1/pcr/m/n/10 https : / / www . highspeedinternet . com / resources / wh
 y-[]does-[]my-[]internet-[]slow-[]down-[]at-[]night$[] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
-[4
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 328.
+[6
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 328.
  (./test.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 178.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 328.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 328.
 Package rerunfilecheck Info: File `test.out' has not changed.
-(rerunfilecheck)             Checksum: 31EF91BDC7BE7F91E6A3ABD3BC15140C;701.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
+(rerunfilecheck)             Checksum: 61871F7D9E741C3D454885AF7F952F4A;2767.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 328.
  ) 
 Here is how much of TeX's memory you used:
- 5362 strings out of 483065
- 82861 string characters out of 5963550
- 340995 words of memory out of 5000000
- 20279 multiletter control sequences out of 15000+600000
+ 5388 strings out of 483065
+ 83271 string characters out of 5963550
+ 341092 words of memory out of 5000000
+ 20291 multiletter control sequences out of 15000+600000
  549254 words of font info for 53 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 34i,8n,29p,344b,307s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,8n,29p,496b,309s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb>
-Output written on test.pdf (5 pages, 111937 bytes).
+Output written on test.pdf (7 pages, 126648 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 157 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
 

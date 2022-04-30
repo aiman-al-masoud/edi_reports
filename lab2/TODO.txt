@@ -1,0 +1,1 @@
+dnsping -s 1.1.1.1 -t NS  google.com
