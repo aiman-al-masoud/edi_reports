@@ -19,7 +19,7 @@
 
 \begin{abstract}
 
-In part 1, the goal has been to monitor the average daily peak time of a server. Whereas part 2 showcases the results of an array of simple DNS-related experiments.
+In part 1, the goal has been to monitor the average daily peak time of a server, whereas part 2 showcases the results of an array of simple DNS-related experiments.
 
 \end{abstract}
 
@@ -52,7 +52,7 @@ When a server is experiencing too many requests, the following things are expect
 \maketitle
 \subsubsection{Experimental Setup}
 
-A script that performs traceroute on a target IP, at regular intervals (every 5 minutes), was left running on a vantage point for just over a week. Subsequently, the data that was collected processed offline. The vantage point in question was a VM (Virtual Machine) running on GCP (Google Cloud Platform). The VM was located on a server in the US. The website targeted by traceroute was: www.google.it.\\
+A script that performs traceroute on a target at regular intervals (every 5 minutes), was left running on a vantage point for just over a week. Subsequently, the data that was collected was processed offline. The vantage point in question was a VM (Virtual Machine) running on GCP (Google Cloud Platform). The VM was located on a server in the US. The website targeted by traceroute was: www.google.it.\\
 
 The assumption that was formulated, in accordance with H1[\ref{hyp1}], was that latency or RTT (Round Trip Time) would surge with the amount of traffic on the server, at any given time. The goal of the experiment was: to try and pinpoint the times of the day with the greatest average latency, (from the vantage point to the target server), and hence the time of greatest traffic on the server.\\
 
@@ -79,7 +79,6 @@ timestamp           & hops & reached & latency\_ms & hour \\ \hline
 \caption{Table 1}
 \label{fig:table1}
 \end{table}
-
 
 \clearpage 
 
@@ -145,9 +144,9 @@ And finally, the following two bar-charts were obtained from [Table \ref{fig:tab
 \end{figure}
 
 
-It doesn't appear that there is much confirmation for the suspected trend in either of the  two graphs, although it does seem, in Figure \ref{fig:latency_graph}, that the latency grows a little during the late evening (18 - 23). If latency is assumed to be proportional to server traffic, this may provide some support for the aforementioned idea that peak time happens during the   the evening hours.\\
+It doesn't appear that there is much confirmation for the suspected trend in either of the  two graphs, although it does seem, in Figure \ref{fig:latency_graph}, that the latency grows a little during the late evening (18 - 23). If latency is assumed to be proportional to server traffic, this may provide some support for the aforementioned idea that peak time happens during the evening hours.\\
 
-For a more decisive answer, this experiment must be repeated for a much longer time interval, and perhaps leveraging many vantage points, stationed at different parts of the globe.
+For a more decisive answer, this experiment must be repeated for a much longer time interval, and perhaps leveraging many vantage points, stationed in different parts of the globe.
 
 \section{Second Part}
 In the second lab, the goal was to experiment with the DNS (Domain Name System), using an assortment of CLI tools designed to test the functioning and performance thereof.
@@ -159,7 +158,7 @@ All of the tests were performed from the same local network at home.
 
 \subsubsection{Query the DNS to obtain the IP addresses of ercole.unipv.it and of another website in the domain it; are the answers authoritative? Why?}
 
-Using the dig command, the ips are: 193.204.34.13 and 142.250.180.163 (google.it), and the answers aren't authoritative as in both cases (AUTHORITY flag = 0). This is because said answers aren't provided to us directly by the nameserver of the owner of the domain.
+Using the dig command, the IPs are: 193.204.34.13 and 142.250.180.163 (google.it). The answers aren't authoritative, as in both cases AUTHORITY flag returned is set to 0. This is because said answers aren't provided to us directly by the nameserver of the owner of the domain, but rather mediated through our local resolver.
 
 \subsubsection{Query the DNS to obtain the name(s) of the mail servers associated with the
 domain universitadipavia.it and berkeley.edu. How many servers
@@ -181,7 +180,7 @@ dig www.japan.go.jp @1.1.1.1 +dnssec\\
 However, the AUTHORITY flag set to 0 shows that the answer isn't authoritative. This is again because it wasn't provided to us directly by the owner of the domain, but rather by Cloudflare's public name server.\\
 
 
-As a sidenote, querying the one of the website's official name servers, returns an answer with an AUTHORITY that is not equal to 0.\\
+As a sidenote, querying the one of the website's official name servers, does return an answer with an AUTHORITY that is not equal to 0.\\
 
 
 
@@ -244,7 +243,7 @@ ns-247.awsdns-30.com.    & 205.251.192.247 \\ \hline
 \end{tabular}
 \end{table}
 
-Running the whois utility on awsdns-30.com, which was assumed to be the primary name sever: since the associated webiste (duolingo.com) is registered under the same TLD, the Expiry Date was found to be: 2024-10-21T21:02:35Z.
+Running the whois utility on awsdns-30.com, which was assumed to be the primary name sever: just because the associated webiste (duolingo.com) is registered under the same TLD, the Expiry Date was found to be: 2024-10-21T21:02:35Z.
 
 
 \subsubsection{Query one of the Name Servers identified in the previous experiment to obtain the IP address of the Name Servers of the domains unipv.it and samsung.com.
@@ -262,9 +261,9 @@ On the other hand, they did respond when queried about the domain duolingo.com, 
 Did you notice any variability? Any expected/unexpected behavior?}
 
 
-The tool used for this task was dnsperf, which for some reason isn't available pre-built on Aptitutde (apt-get) as of writing this report, so it had to be built from source on Ubuntu, following the steps on their repository [\ref{article2}]
+The tool used for this task was dnsperf, which happens not to be available on Aptitutde (Ubuntu's main package manager) as of writing this report, so it had to be built from source, following the steps on the tool's repository [\ref{article2}]
 
-The performance of Cloudflare's public name server (1.1.1.1) was measured, with the five following queries repeated 1000 times each:
+Cloudflare's public name server's performance was measured, with the five following queries repeated 1000 times each:
 
 \begin{table}[h!]
 \centering
@@ -334,9 +333,9 @@ RRSIG              \\ \hline
 \end{table}
 
 
-The first thing to be noticed was that -t HTTPS wasn't returned an error, and wasn't considered a valid RR by dnseval, perhaps owing to its novelty within the RR types.\\
+The first thing to be noticed, was that -t HTTPS returned an error, indicating that it wasn't considered a valid RR type by dnseval, perhaps owing to its novelty with respect to the more traditional RR types.\\
 
-Other than that, in terms of speed (average latency in ms), Cisco's nameserver was consistently the slowest. This doesn't seem to depend on the geographic location of the name servers themselves, as all of the aforementioned servers are located in the US, with the exception of Cloudflare's, located in Australia, according to Keycdn [\ref{article3}] 
+Other than that, in terms of speed (average latency in ms), Cisco's nameserver turned out to be the slowest. This didn't seem to depend on the geographic location of the name servers themselves, as all of the aforementioned servers are located in the US, with the exception of Cloudflare's, located in Australia, according to Keycdn [\ref{article3}] 
 
 Another thing worth noting, is that only Cisco's name server didn't respond at all when queried for the RRSIG records associated to the domain name google.com.
 
@@ -346,7 +345,7 @@ It could be concluded that the difference in performance in this experiment depe
 \subsubsection{Check the path followed by your queries using different Name Servers; did you
 notice any expected/unexpected behavior?}
 
-In this task, the command: dnstraceroute was employed. As expected, the routes started out pretty much identical, then they began diverging (at approximately hop 7). 
+The command dnstraceroute was employed for this task. As expected, the routes started out pretty much identical, then they began diverging (at approximately hop 7). 
 
 It took 12 hops to reach Google's and Quad9's name servers, 11 hops to reach Cloudflare's name server and just 10 hops to reach Cisco's name server, despite it scoring the largest latency on the previous experiment.
 
@@ -357,7 +356,6 @@ It took 12 hops to reach Google's and Quad9's name servers, 11 hops to reach Clo
 \section{Conclusions}
 
 You can find the code employed in these experiments on Github [\ref{article4}] 
-
 
 \section{References}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.21)  2 MAY 2022 22:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.21)  3 MAY 2022 21:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -294,7 +294,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.84 \clearpage
+l.83 \clearpage
                 [1
 
 ] [2
@@ -303,122 +303,122 @@ l.84 \clearpage
 <./images/latency_graph.png, id=100, 693.59125pt x 378.41376pt>
 File: ./images/latency_graph.png Graphic file (type png)
 <use ./images/latency_graph.png>
-Package pdftex.def Info: ./images/latency_graph.png  used on input line 135.
+Package pdftex.def Info: ./images/latency_graph.png  used on input line 134.
 (pdftex.def)             Requested size: 277.43158pt x 151.36281pt.
 <./images/hops_graph.png, id=102, 690.58pt x 376.40625pt>
 File: ./images/hops_graph.png Graphic file (type png)
 <use ./images/hops_graph.png>
-Package pdftex.def Info: ./images/hops_graph.png  used on input line 142.
+Package pdftex.def Info: ./images/hops_graph.png  used on input line 141.
 (pdftex.def)             Requested size: 276.2271pt x 150.55983pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
 [3
 
  <./images/latency_graph.png> <./images/hops_graph.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--195
+Underfull \hbox (badness 10000) in paragraph at lines 189--194
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--201
+Underfull \hbox (badness 10000) in paragraph at lines 198--200
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
 [5]
-Overfull \hbox (6.58817pt too wide) in paragraph at lines 319--321
+Overfull \hbox (6.58817pt too wide) in paragraph at lines 318--320
 []\OT1/ptm/m/n/10 For each of the afore-men-tioned name-servers, and for each o
 f the fol-low-ing five RR types, the do-main google.com
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--338
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
 [6]
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
-66.
+64.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \hbox (73.53214pt too wide) in paragraph at lines 366--367
+Overfull \hbox (73.53214pt too wide) in paragraph at lines 364--365
 [][]$\OT1/pcr/m/n/10 https : / / www . highspeedinternet . com / resources / wh
 y-[]does-[]my-[]internet-[]slow-[]down-[]at-[]night$[] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 377.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 375.
 [7
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 377.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 375.
  (./test.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 377.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 377.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 375.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 375.
 Package rerunfilecheck Info: File `test.out' has not changed.
 (rerunfilecheck)             Checksum: 6F8844ADEDF48691D114D36284887684;2718.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 377.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 375.
  ) 
 Here is how much of TeX's memory you used:
  5391 strings out of 483065
@@ -432,7 +432,7 @@ Here is how much of TeX's memory you used:
 e/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb>
-Output written on test.pdf (8 pages, 129732 bytes).
+Output written on test.pdf (8 pages, 129722 bytes).
 PDF statistics:
  164 PDF objects out of 1000 (max. 8388607)
  145 compressed objects within 2 object streams
