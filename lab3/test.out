@@ -1,7 +1,7 @@
 \BOOKMARK [1][-]{section.1}{Parallel Connections}{}% 1
 \BOOKMARK [2][-]{subsection.1.1}{HTTP/1 vs HTTP/2}{section.1}% 2
 \BOOKMARK [2][-]{subsection.1.2}{Methodology and experimental setup}{section.1}% 3
-\BOOKMARK [1][-]{section.2}{Question 2}{}% 4
+\BOOKMARK [1][-]{section.2}{Caching Policies}{}% 4
 \BOOKMARK [2][-]{subsection.2.1}{Methodology and experimental setup}{section.2}% 5
 \BOOKMARK [1][-]{section.3}{Apache Benchmark}{}% 6
 \BOOKMARK [2][-]{subsection.3.1}{Methodology and experimental setup}{section.3}% 7

@@ -39,7 +39,7 @@ A good Page Load Time in 2022 is between 1 and 2 seconds, but it depends, and ha
 
 \subsection{HTTP/1 vs HTTP/2}
 
-The first experiment performed here pertains to the effect of increased parallel connections on Page Load Time. As power users will know, modern web browsers allow their users to peek into various configuration settings and tweak them, this is especially true of Mozilla Firefox, where the user can access various technical settings by typing in 'about:config' into the navigation bar and hitting enter. More specifically, one of these configuration parameters is called 'network.http.max-persistent-connections-per-server', and as the name suggests, it governs the maximum amount of parallel persistent TCP connections that the browser is allowed to open for any particular web server on the internet. [\ref{article2}] 
+The first experiment performed here pertains to the effect of increased parallel connections on Page Load Time. As power users will know, modern web browsers allow their users to peek into various configuration settings and tweak them, this is especially true of Mozilla Firefox, where the user can access various technical settings by typing in 'about:config' into the navigation bar and hitting enter. More specifically, one of these configuration parameters is called 'network.http.max-persistent-connections-per-server', and as the name suggests, it governs the maximum amount of parallel persistent TCP connections that the browser is allowed to open for any particular web server on the Internet. [\ref{article2}] 
 
 By default, the value for this option is set to '6', but can increasing it arbitrarily lead to an overall improvement in the performance of the web browser when loading pages? 
 
@@ -80,10 +80,57 @@ Although the results aren't exhaustive, they clearly show that HTTP/1 websites f
 
 
 
-\section{Question 2}
-%Insert a brief introduction of your second lab experience
+\section{Caching Policies}
+
+Cache is crucial to the correct operation web infrastructure, as its valid usage provides advantages for the origin servers, as well as for the end users of a particular web-service. 
+
+From the service provider's point of view, cache helps to optimize the number of accesses made by clients to the origin web server, easing up the load on them; and, from the client's side, cache helps in reducing PLT, especially if the assets (images, stylesheets, scripts) that have to be served with the page are many.
+
+Caches can be remote or local. Remote caches can either fall under the category of Proxy or Managed caches. Proxy caches follow a "pull model", where any client that accesses content X within a particular local network, will trigger the caching of content X on the local network's proxy, so as to avoid having to download the content again from the wider Internet. Managed caches follow a "push model", in that the service providers manually load content to the cache, with the goal of easing up the load on their origin servers by distributing client requests over multiple servers, an example of a Managed cache is a CDN (Content Delivery Network).
+
+Caches can also be private or public, the idea behind private caches is to avoid disclosing private information that has to be cached on the user's side.
+
+All of these, and many more, caching policies and behaviors are governed by specific HTTP request and response headers, such as the Cache-Control, If-Modified-Since and ETag headers. [\ref{article5}] 
+
 \subsection{Methodology and experimental setup}
-%Discuss your methodological approach and the plan/setup of your experiments
+
+The goal of this experiment was to assess whether the caching policies of various websites proved to be effective, at least on the client's side, by comparing the performances of said websites with and without cache enabled. 
+
+This was done on a real browser (Firefox), with the help of a custom bash script with the xdotool [\ref{article6}] utility, to automate the process of reloading the web-pages, and collecting the data consistently, taking several readings. The script in question, dubbed "scripton.sh", is available on the Github repository associated to this report [\ref{article7}], but it has to be fine tuned to the screen-dimensions of the particular host computer, as it leverages the position of the cursor on the screen to interact with Firefox and copy the textual output from the Network Monitor's interface; this process of fine-tuning can be performed manually, with the help of the included "calibrate.sh" script. 
+
+
+9 websites (3 secure HTTP/1, 3 unsecure HTTP/1 and 3 HTTP/2), were chosen for this test, and the data collected for each was: 
+
+
+\begin{enumerate}
+
+\item the PLT, and
+\item the number of requests made to the server
+
+\end{enumerate}
+
+As it is evident from the results, in all cases, caching does prove to be advantageous for the client, as it saves quite a bit of time loading the page, decreasing the number of requests that have to be performed towards the server.
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|l|l|}
+\hline
+\multicolumn{1}{|r|}{\textbf{}}          & \multicolumn{1}{r|}{\textbf{}} & \multicolumn{1}{r|}{\textbf{number\_requests}} & \multicolumn{1}{r|}{\textbf{plt\_seconds}} \\ \hline
+\textbf{http\_version}                   & \textbf{cache}                 & \multicolumn{1}{c|}{\textbf{}}                 & \multicolumn{1}{c|}{\textbf{}}             \\ \hline
+\multirow{2}{*}{\textbf{http1}}          & \textbf{False}                 & 39.950000                                      & 2.343500                                   \\ \cline{2-4} 
+                                         & \textbf{True}                  & 29.923077                                      & 1.543077                                   \\ \hline
+\multirow{2}{*}{\textbf{http2}}          & \textbf{False}                 & 80.083333                                      & 3.708333                                   \\ \cline{2-4} 
+                                         & \textbf{True}                  & 56.333333                                      & 2.652667                                   \\ \hline
+\multirow{2}{*}{\textbf{unsecure-http1}} & \textbf{False}                 & 78.666667                                      & 4.010000                                   \\ \cline{2-4} 
+                                         & \textbf{True}                  & 45.500000                                      & 3.580000                                   \\ \hline
+\end{tabular}
+
+\caption{...}
+\label{fig:table2}
+\end{table}
+
+
 
 
 
@@ -154,7 +201,7 @@ Options      & Average Time (seconds) \\ \hline
 \end{tabular}
 
 \caption{...}
-\label{fig:table2}
+\label{fig:table3}
 
 \end{table}
 
@@ -181,6 +228,14 @@ Options      & Average Time (seconds) \\ \hline
 
 
 \item \label{article4} \url{https://httpd.apache.org/docs/2.4/programs/ab.html#synopsis} 
+
+\item \label{article5} \url{https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching} 
+
+
+\item \label{article6} \url{http://manpages.ubuntu.com/manpages/trusty/man1/xdotool.1.html} 
+
+
+\item \label{article7} \url{https://github.com/aiman-al-masoud/edi_reports} 
 
 
 
