@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.21)  10 JUN 2022 00:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.21)  10 JUN 2022 00:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -286,41 +286,33 @@ l.87 F
 
 
 
-]
+] [2] [3
 
-LaTeX Warning: Reference `article5' on page 2 undefined on input line 93.
-
-
-LaTeX Warning: Reference `article6' on page 2 undefined on input line 99.
-
-
-LaTeX Warning: Reference `article7' on page 2 undefined on input line 99.
-
-[2] [3]
+] [4]
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
-23.
+39.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \hbox (8.03214pt too wide) in paragraph at lines 223--224
+Overfull \hbox (8.03214pt too wide) in paragraph at lines 239--240
 [][]$\OT1/pcr/m/n/10 https : / / www . hobo-[]web . co . uk / your-[]website-[]
 design-[]should-[]load-[]in-[]4-[]seconds/$[] 
  []
 
 
-Overfull \hbox (121.53214pt too wide) in paragraph at lines 225--226
+Overfull \hbox (121.53214pt too wide) in paragraph at lines 241--242
 [][]$\OT1/pcr/m/n/10 https : / / www . computerworld . com / article / 2541429 
 / hacking-[]firefox-[]-[]the-[]secrets-[]of-[]about-[]config .
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 244.
-[4
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
+[5
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 244.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
  (./test.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 244.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 244.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 256.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
 
 
 Package rerunfilecheck Warning: File `test.out' has changed.
@@ -328,20 +320,17 @@ Package rerunfilecheck Warning: File `test.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `test.out':
-(rerunfilecheck)             Before: F891A83078E7F7EBA74B6810DEF19166;639
-(rerunfilecheck)             After:  C38AFF81E5B21E37D37A2F256A7573FD;645.
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Before: E53382F24C4DFDA1362F387031F03E7E;652
+(rerunfilecheck)             After:  50B1B138AC8BB619CAC15AD269455FAA;735.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 244.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 256.
  ) 
 Here is how much of TeX's memory you used:
- 5391 strings out of 483065
- 83072 string characters out of 5963550
- 337720 words of memory out of 5000000
+ 5393 strings out of 483065
+ 83092 string characters out of 5963550
+ 336837 words of memory out of 5000000
  20300 multiletter control sequences out of 15000+600000
  547862 words of font info for 51 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
@@ -350,10 +339,10 @@ Here is how much of TeX's memory you used:
 e/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb>
-Output written on test.pdf (5 pages, 59079 bytes).
+Output written on test.pdf (6 pages, 59668 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
+ 125 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

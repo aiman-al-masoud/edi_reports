@@ -46,7 +46,7 @@ By default, the value for this option is set to '6', but can increasing it arbit
 Here comes to play a very important distinction between websites, and that is difference between HTTP/1 and HTTP/2: the first two major versions of the ubiquitous Hypertext Transfer Protocol. There are various ways in which HTTP/2 tried to improve on HTTP/1, but what is of specific interest to us in this particular inquiry is that: websites running on HTTP/1 tend to favor connections to multiple separate servers, to dowload the objects of a page in parallel, and overcome the limitation imposed by browsers on the number of parallel connections to a single server, a technique known as Domain Sharding [\ref{article3}]. 
 
 HTTP/2 helped overcome this very necessity, by introducing Streams that could convey multiple
-concurrent (and bi-directional) HTTP requests within a single persistent TCP connection; thus eliminating the need to connect to separate resource servers, and even eliminating the overhead associated to having to open multiple TCP connections with them. This is something that, at least in the long run, will render the technique of Domain Sharding obsolete.
+concurrent (and bi-directional) HTTP requests within a single persistent TCP connection; thus eliminating the need to connect to separate resource servers, and even eliminating the overhead associated to having to open multiple TCP connections with them. This is something that, at least on the long run, will render the technique of Domain Sharding obsolete.
 
 So, to go back to the original question: resource intensive HTTP/1 websites may benefit from an increased number of parallel TCP connections, as they only support a single HTTP request per TCP connection. On the other hand, HTTP/2 websites support multiple concurrent HTTP requests over the same TCP connection, hence, from a theoritical viewpoint, it shouldn't make much of a difference to them if the client supports a greater number of TCP connections.
 
@@ -131,6 +131,7 @@ As it is evident from the results, in all cases, caching does prove to be advant
 \end{table}
 
 
+\clearpage
 
 
 
@@ -207,10 +208,25 @@ Options      & Average Time (seconds) \\ \hline
 
 
 
-\section{Question 4}
-%Insert a brief introduction of your second lab experience
+\section{nghttp and h2load}
+Among the tools that can be used to measure the performance of HTTP/2 servers are nghttp, which is an HTTP/2 client, and h2load, which is a benchmarking tool.
+
+
 \subsection{Methodology and experimental setup}
 %Discuss your methodological approach and the plan/setup of your experiments
+
+
+\subsection{The Role of Warmup Time in h2load}
+
+Warmup time is used by the benchmarking tool's client to start a connection with the 
+webserver, before actually beginning to transfer benchmark data, you can verify that some traffic is exchanged during the warmup phase using a sniffer such as Wireshark.
+
+When warmup time > 0, "time for connect" and "time to 1st byte" tend to become 0.
+
+
+
+
+
 
 % idk, latex just needs this here for bibliography linking to work properly:
 \clearpage
@@ -226,17 +242,13 @@ Options      & Average Time (seconds) \\ \hline
 
 \item \label{article3} \url{https://blog.stackpath.com/glossary-domain-sharding/} 
 
-
 \item \label{article4} \url{https://httpd.apache.org/docs/2.4/programs/ab.html#synopsis} 
 
 \item \label{article5} \url{https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching} 
 
-
 \item \label{article6} \url{http://manpages.ubuntu.com/manpages/trusty/man1/xdotool.1.html} 
 
-
 \item \label{article7} \url{https://github.com/aiman-al-masoud/edi_reports} 
-
 
 
 \end{enumerate}
