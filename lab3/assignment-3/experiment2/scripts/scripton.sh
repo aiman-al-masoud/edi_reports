@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # args
 WEBSITE=$1 # website to experiment on 
 REPEAT_EXPERIMENT=$2 # number of times experiment is repeated for each condition
