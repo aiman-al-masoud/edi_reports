@@ -34,15 +34,14 @@ function runExperiment(){
             echo "{"
             echo '"website":"'$WEBSITE'",'
             echo -n '"number_requests":'
-            copyFromScreen $NUM_REQ_COORDS 
-            echo ","
+            echo  $(copyFromScreen $NUM_REQ_COORDS) | egrep -o '[0-9]+' | tr -d "\n" 
+            echo ","   
             xdotool key Ctrl+Shift+E # re-open network monitor (just in case)
             echo  -n '"cache":'
             echo  $CACHE_ON','
             # get PLT ('Finish')
             echo -n '"plt_seconds":'
-            copyFromScreen $FINISH_COORDS
-            echo ""
+            echo  $(copyFromScreen $FINISH_COORDS) | egrep -o '[0-9]+\.[0-9]+'
             echo "}"
             xdotool key Ctrl+Shift+E # re-open network monitor (just in case)
             sleep 2  
