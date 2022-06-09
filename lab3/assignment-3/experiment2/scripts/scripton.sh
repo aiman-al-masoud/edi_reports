@@ -43,6 +43,7 @@ function runExperiment(){
             echo -n '"plt_seconds":'
             echo  $(copyFromScreen $FINISH_COORDS) | egrep -o '[0-9]+\.[0-9]+'
             echo "}"
+            echo "--------------------------------------------"
             xdotool key Ctrl+Shift+E # re-open network monitor (just in case)
             sleep 2  
         done
@@ -71,6 +72,7 @@ sleep 1
 xdotool key Super+Up # maximize win
 xdotool key Ctrl+Shift+E # open up network monitor
 sleep 2
+
 
 # assume cache is enabled (checkbox UNticked)
 runExperiment $REPEAT_EXPERIMENT
