@@ -4,6 +4,7 @@ NUM_REQ_COORDS="131 750"
 FINISH_COORDS="549 750"
 CACHE_CHECK_BOX_COORDS="978 507"
 REPEAT_EXPERIMENT=2 # number of times experiment is repeated
+LOAD_PAGE_WAIT=3 # max time to wait for page to load
 
 # copy some text from a text-field at the specified coordinates
 function copyFromScreen(){
@@ -21,7 +22,7 @@ function runExperiment(){
         do 
             echo "experiment "$c
             xdotool key F5 # reload
-            sleep 3 
+            sleep $LOAD_PAGE_WAIT
             # get number of requests (bottom left)
             copyFromScreen $NUM_REQ_COORDS
             xdotool key Ctrl+Shift+E # re-open network monitor (just in case)
@@ -41,6 +42,7 @@ function toggleCache(){
 }
 
 # main starts here
+echo $WEBSITE
 firefox $WEBSITE
 sleep 1
 
