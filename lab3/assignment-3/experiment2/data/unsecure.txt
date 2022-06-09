@@ -1,0 +1,99 @@
+http://maxgames.com/
+----------with cache----------
+experiment 0
+94 requests
+Finish: 4.12 s
+experiment 1
+31 requests
+Finish: 2.93 s
+experiment 2
+29 requests
+Finish: 2.79 s
+experiment 3
+22 requests
+Finish: 2.12 s
+experiment 4
+29 requests
+Finish: 2.99 s
+----------without cache----------
+experiment 0
+104 requests
+Finish: 3.38 s
+experiment 1
+102 requests
+Finish: 4 s
+experiment 2
+104 requests
+Finish: 3.94 s
+experiment 3
+106 requests
+Finish: 4.15 s
+experiment 4
+104 requests
+Finish: 4.19 s
+http://go.com/
+----------with cache----------
+experiment 0
+20 requests
+Finish: 2.99 s
+experiment 1
+22 requests
+Finish: 2.36 s
+experiment 2
+22 requests
+Finish: 2.13 s
+experiment 3
+22 requests
+Finish: 2.15 s
+experiment 4
+22 requests
+Finish: 2.10 s
+----------without cache----------
+experiment 0
+31 requests
+Finish: 2.92 s
+experiment 1
+31 requests
+Finish: 2.83 s
+experiment 2
+31 requests
+Finish: 3.02 s
+experiment 3
+69 requests
+Finish: 4.03 s
+experiment 4
+68 requests
+Finish: 4.18 s
+http://mclab.unipv.it/
+----------with cache----------
+experiment 0
+15 requests
+Finish: 649 ms
+experiment 1
+13 requests
+Finish: 654 ms
+experiment 2
+13 requests
+Finish: 726 ms
+experiment 3
+13 requests
+Finish: 673 ms
+experiment 4
+13 requests
+Finish: 660 ms
+----------without cache----------
+experiment 0
+22 requests
+Finish: 1.54 s
+experiment 1
+22 requests
+Finish: 1.23 s
+experiment 2
+22 requests
+Finish: 1.26 s
+experiment 3
+22 requests
+Finish: 1.29 s
+experiment 4
+22 requests
+Finish: 1.17 s

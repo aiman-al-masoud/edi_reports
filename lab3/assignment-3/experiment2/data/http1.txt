@@ -1,0 +1,99 @@
+https://web.unipv.it/
+----------with cache----------
+experiment 0
+61 requests
+Finish: 1.93 s
+experiment 1
+43 requests
+Finish: 1.66 s
+experiment 2
+39 requests
+Finish: 1.61 s
+experiment 3
+40 requests
+Finish: 1.60 s
+experiment 4
+40 requests
+Finish: 1.51 s
+----------without cache----------
+experiment 0
+75 requests
+Finish: 2.99 s
+experiment 1
+75 requests
+Finish: 2.60 s
+experiment 2
+71 requests
+Finish: 2.59 s
+experiment 3
+71 requests
+Finish: 2.51 s
+experiment 4
+70 requests
+Finish: 2.27 s
+https://www.pythonanywhere.com/
+----------with cache----------
+experiment 0
+21 requests
+Finish: 1.43 s
+experiment 1
+7 requests
+Finish: 854 ms
+experiment 2
+7 requests
+Finish: 835 ms
+experiment 3
+7 requests
+Finish: 671 ms
+experiment 4
+9 requests
+Finish: 1.61 s
+----------without cache----------
+experiment 0
+32 requests
+Finish: 2.66 s
+experiment 1
+33 requests
+Finish: 2.66 s
+experiment 2
+32 requests
+Finish: 2.89 s
+experiment 3
+32 requests
+Finish: 2.67 s
+experiment 4
+32 requests
+Finish: 2.50 s
+https://www.mit.edu/
+----------with cache----------
+experiment 0
+34 requests
+Finish: 2.09 s
+experiment 1
+26 requests
+Finish: 1.39 s
+experiment 2
+26 requests
+Finish: 1.50 s
+experiment 3
+1 request
+Finish: 0 ms
+experiment 4
+1 request
+Finish: 0 ms
+----------without cache----------
+experiment 0
+31 requests
+Finish: 2.21 s
+experiment 1
+32 requests
+Finish: 2.02 s
+experiment 2
+37 requests
+Finish: 2.14 s
+experiment 3
+32 requests
+Finish: 2.23 s
+experiment 4
+31 requests
+Finish: 2 s

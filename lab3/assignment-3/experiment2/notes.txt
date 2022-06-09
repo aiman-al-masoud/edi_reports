@@ -1,7 +1,7 @@
 Analyze and discuss the impacts of caching policies implemented by different
 commercial/institutional websites on the Page Load Times. Consider websites that support
 HTTP/1.1 and HTTP/2 as well as unsecure and secure connections. Did you notice any expected
-or unexpected behavior
+or unexpected behavior?
 
 
 Get PLT with and without cache on Firefox for each website (Disable Cache checkbox).
