@@ -12,6 +12,9 @@ FINISH_COORDS="549 750"
 CACHE_CHECK_BOX_COORDS="978 507"
 LOAD_PAGE_WAIT=3 # max time to wait for page to load
 
+# flags
+CACHE_ON=1 # +1 true -1 false
+
 # copy some text from a text-field at the specified coordinates
 function copyFromScreen(){
     xdotool mousemove $1 $2
@@ -19,21 +22,28 @@ function copyFromScreen(){
     sleep 1
     xdotool key Ctrl+C
     xclip -o
-    echo ""
 }
 
 # reload the page and get the data from the screen for $1 times
 function runExperiment(){
     for (( c=0; c<$1; c++ ))
         do 
-            echo "experiment "$c
             xdotool key F5 # reload
             sleep $LOAD_PAGE_WAIT
             # get number of requests (bottom left)
-            copyFromScreen $NUM_REQ_COORDS
+            echo "{"
+            echo '"website":"'$WEBSITE'",'
+            echo -n '"number_requests":'
+            copyFromScreen $NUM_REQ_COORDS 
+            echo ","
             xdotool key Ctrl+Shift+E # re-open network monitor (just in case)
+            echo  -n '"cache":'
+            echo  $CACHE_ON','
             # get PLT ('Finish')
+            echo -n '"plt_seconds":'
             copyFromScreen $FINISH_COORDS
+            echo ""
+            echo "}"
             xdotool key Ctrl+Shift+E # re-open network monitor (just in case)
             sleep 2  
         done
@@ -45,6 +55,7 @@ function toggleCache(){
     sleep 1
     xdotool click 1
     sleep 2
+    CACHE_ON=$(( -1 * $CACHE_ON ))
 }
 
 # done message on a new Firefox tab
@@ -55,7 +66,6 @@ function doneMessage(){
 }
 
 # main starts here
-echo $WEBSITE
 firefox $WEBSITE
 sleep 1
 
@@ -64,11 +74,9 @@ xdotool key Ctrl+Shift+E # open up network monitor
 sleep 2
 
 # assume cache is enabled (checkbox UNticked)
-echo '----------with cache----------'
 runExperiment $REPEAT_EXPERIMENT
 # turn cache off and repeat experiment
 toggleCache
-echo '----------without cache----------'
 runExperiment $REPEAT_EXPERIMENT
 # turn cache back on
 toggleCache 
