@@ -1,0 +1,46 @@
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking eu.pythonanywhere.com (be patient).....done
+
+
+Server Software:        PythonAnywhere
+Server Hostname:        eu.pythonanywhere.com
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES256-GCM-SHA384,2048,256
+Server Temp Key:        X25519 253 bits
+TLS Server Name:        eu.pythonanywhere.com
+
+Document Path:          /
+Document Length:        46342 bytes
+
+Concurrency Level:      10
+Time taken for tests:   0.793 seconds
+Complete requests:      20
+Failed requests:        0
+Keep-Alive requests:    20
+Total transferred:      944640 bytes
+HTML transferred:       926840 bytes
+Requests per second:    25.21 [#/sec] (mean)
+Time per request:       396.728 [ms] (mean)
+Time per request:       39.673 [ms] (mean, across all concurrent requests)
+Transfer rate:          1162.64 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0   67  69.5    122     153
+Processing:    66  197  84.7    210     313
+Waiting:       61  165  63.6    151     271
+Total:         66  264 146.8    234     466
+
+Percentage of the requests served within a certain time (ms)
+  50%    234
+  66%    392
+  75%    431
+  80%    431
+  90%    466
+  95%    466
+  98%    466
+  99%    466
+ 100%    466 (longest request)

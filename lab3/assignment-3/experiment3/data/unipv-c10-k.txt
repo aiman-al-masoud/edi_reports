@@ -1,0 +1,47 @@
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking web.unipv.it (be patient).....done
+
+
+Server Software:        Apache/2.4.10
+Server Hostname:        web.unipv.it
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES256-GCM-SHA384,2048,256
+Server Temp Key:        ECDH P-256 256 bits
+TLS Server Name:        web.unipv.it
+
+Document Path:          /
+Document Length:        150136 bytes
+
+Concurrency Level:      10
+Time taken for tests:   1.235 seconds
+Complete requests:      20
+Failed requests:        8
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 4)
+Keep-Alive requests:    0
+Total transferred:      2769084 bytes
+HTML transferred:       2762624 bytes
+Requests per second:    16.20 [#/sec] (mean)
+Time per request:       617.455 [ms] (mean)
+Time per request:       61.745 [ms] (mean, across all concurrent requests)
+Transfer rate:          2189.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      157  178  15.5    176     232
+Processing:   150  250  56.0    243     385
+Waiting:       57   80  22.9     70     138
+Total:        307  428  60.5    414     571
+
+Percentage of the requests served within a certain time (ms)
+  50%    414
+  66%    434
+  75%    441
+  80%    482
+  90%    557
+  95%    571
+  98%    571
+  99%    571
+ 100%    571 (longest request)

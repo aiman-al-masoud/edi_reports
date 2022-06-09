@@ -73,7 +73,7 @@ Although the results aren't exhaustive, they clearly show that HTTP/1 websites f
 \multirow{2}{*}{\textbf{2}}     & \textbf{1}            & 3.178889                       \\ \cline{2-3} 
                                 & \textbf{6}            & 3.486667                       \\ \hline
 \end{tabular}
-\caption{Table 1}
+\caption{...}
 \label{fig:table1}
 
 \end{table}
@@ -102,29 +102,61 @@ The concurrency (-c) option regulates the number of multiple requests to perform
 The keep-alive option (-k) specifies whether to request the usage of the HTTP KeepAlive feature (aka: persistent connections), which means that a single TCP connection will be re-used for multiple sequential HTTP requests, thus reducing the overhead of TCP connection creation [\ref{article4}]. Obviously, since this is HTTP/1, concurrent requests cannot share the same TCP connection, as already stated.
 
 
-
-Each website was tested with the following 3 commands:
+Each website was tested with the following 4 commands:
 
 
 \begin{enumerate}
 
 
-\item ab -c 1 -n 20 http://example.com
+\item ab -c 1 -n 20 http://example.com/
 
 20 requests, one at a time, without reusing the TCP connection.
 
-\item ab -c 10 -n 20 http://example.com
+\item ab -c 10 -n 20 http://example.com/
 
-20 requests, 10 at a time, without reusing the TCP connections.
+20 requests, 10 at a time, without reusing TCP connections.
 
-\item ab -k -n 20 http://example.com
+\item ab -k -n 20 http://example.com/
 
 20 requests, one at a time, reusing the TCP connection.
+
+
+\item ab -c 10 -k -n 20 http://example.com/
+
+20 requests, 10 at a time, reusing TCP connections.
+
 
 \end{enumerate}
 
 
 
+The first command (-c 1 and no -k) is expected to be the slowest, as the requests are all performed sequentially, and, for each request, a new TCP connection must be opened, with all of the overhead associated to that costly operation. 
+
+The last command instead (-c 10 and k), is expected to be the fastest, as it combines the benefits from issuing multiple parallel requests, with the benefits of reusing already opened TCP connections.
+
+Sure enough, these are the average times that it took to run these tests:
+
+
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+Options      & Average Time (seconds) \\ \hline
+-c1          & 5.191        \\ \hline
+-c1 \&\& -k  & 3.194        \\ \hline
+-c10         & 1.036        \\ \hline
+-c10 \&\& -k & 0.939        \\ \hline
+
+
+
+\end{tabular}
+
+\caption{...}
+\label{fig:table2}
+
+\end{table}
 
 
 
