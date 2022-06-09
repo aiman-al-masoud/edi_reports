@@ -1,9 +1,15 @@
+# args
+WEBSITE=$1 # website to experiment on 
+REPEAT_EXPERIMENT=$2 # number of times experiment is repeated for each condition
+
+# default args
+WEBSITE=${WEBSITE:-'https://web.unipv.it'}
+REPEAT_EXPERIMENT=${REPEAT_EXPERIMENT:-1}
+
 # parameters
-WEBSITE='https://web.unipv.it'
 NUM_REQ_COORDS="131 750"
 FINISH_COORDS="549 750"
 CACHE_CHECK_BOX_COORDS="978 507"
-REPEAT_EXPERIMENT=2 # number of times experiment is repeated
 LOAD_PAGE_WAIT=3 # max time to wait for page to load
 
 # copy some text from a text-field at the specified coordinates
@@ -41,6 +47,13 @@ function toggleCache(){
     sleep 2
 }
 
+# done message on a new Firefox tab
+function doneMessage(){
+    xdotool key Ctrl+t
+    xdotool type 'all done!'
+    xdotool key Return
+}
+
 # main starts here
 echo $WEBSITE
 firefox $WEBSITE
@@ -59,3 +72,5 @@ echo '----------without cache----------'
 runExperiment $REPEAT_EXPERIMENT
 # turn cache back on
 toggleCache 
+# all done 
+doneMessage
