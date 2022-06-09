@@ -44,9 +44,11 @@ xdotool key Ctrl+Shift+E # open up network monitor
 sleep 2
 
 # assume cache is enabled (checkbox UNticked)
+echo '----------with cache----------'
 runExperiment
 # turn cache off and repeat experiment
 toggleCache
+echo '----------without cache----------'
 runExperiment
 # turn cache back on
 toggleCache 
