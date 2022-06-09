@@ -1,0 +1,114 @@
+Hypothesis:
+
+HTTP1 servers tend to open multiple parallel connections with the client, to avoid head of line blocking.
+
+Page Load Time of HTTP1 websites should improve when the parameter: network.http.max-persistent-connections-per-server is increased.
+
+Setup:
+
+Firefox
+network.http.max-persistent-connections-per-server
+Disable Cache checkbox
+
+
+# Mainly HTTP1
+
+https://web.unipv.it/
+
+https://www.pythonanywhere.com/
+
+https://www.mit.edu/
+
+
+# Mainly HTTP2
+
+
+https://github.com/
+
+https://archive.org/
+
+https://stackoverflow.com/
+
+
+-------------------------------
+Param=1
+
+https://web.unipv.it/
+Finish: 4.63 s DOMContentLoaded: 2.47 s load: 4.19 s
+Finish: 4.61 s DOMContentLoaded: 2.50 s load: 4.21 s
+Finish: 4.61 s DOMContentLoaded: 2.57 s load: 4.18 s
+
+
+https://eu.pythonanywhere.com/
+Finish: 3.19 s DOMContentLoaded: 813 ms load: 2.60 s
+Finish: 2.65 s DOMContentLoaded: 776 ms load: 2.38 s
+Finish: 2.51 s DOMContentLoaded: 682 ms load: 2.28 s
+
+
+https://www.mit.edu/
+Finish: 4.60 s DOMContentLoaded: 624 ms load: 2.33 s
+Finish: 6.75 s DOMContentLoaded: 789 ms load: 2.51 s
+Finish: 6.64 s DOMContentLoaded: 804 ms load: 2.48 s
+
+
+https://github.com/
+Finish: 2.36 s DOMContentLoaded: 625 ms load: 1.30 s
+Finish: 2.60 s DOMContentLoaded: 521 ms load: 1.48 s
+Finish: 2.57 s DOMContentLoaded: 722 ms load: 1.43 s
+
+
+https://archive.org/
+
+Finish: 5.34 s DOMContentLoaded: 2.59 s load: 5.32 s
+Finish: 3.76 s DOMContentLoaded: 1.50 s load: 3.73 s
+Finish: 4.05 s DOMContentLoaded: 1.79 s load: 4.02 s
+
+
+https://stackoverflow.com/
+Finish: 5.15 s DOMContentLoaded: 827 ms load: 3.70 s
+Finish: 5.04 s DOMContentLoaded: 816 ms load: 3.60 s
+Finish: 5.60 s DOMContentLoaded: 663 ms load: 4.03 s
+
+
+Param=6
+
+
+https://web.unipv.it/
+
+Finish: 2.97 s DOMContentLoaded: 1.18 s load: 2.45 s
+Finish: 2.79 s DOMContentLoaded: 1.14 s load: 2.53 s
+Finish: 2.34 s DOMContentLoaded: 990 ms load: 2.13 s
+
+
+https://eu.pythonanywhere.com/
+
+Finish: 2.24 s DOMContentLoaded: 939 ms load: 1.85 s
+Finish: 1.72 s DOMContentLoaded: 697 ms load: 1.48 s
+Finish: 2.07 s DOMContentLoaded: 512 ms load: 1.80 s
+
+
+https://www.mit.edu/
+Finish: 6.84 s DOMContentLoaded: 827 ms load: 2.68 s
+Finish: 6.77 s DOMContentLoaded: 797 ms load: 2.49 s
+Finish: 6.86 s DOMContentLoaded: 666 ms load: 2.50 s
+
+
+https://github.com/
+
+Finish: 4.34 s DOMContentLoaded: 904 ms load: 3.04 s
+Finish: 2.56 s DOMContentLoaded: 566 ms load: 1.35 s
+Finish: 2.50 s DOMContentLoaded: 558 ms load: 1.36 s
+
+
+https://archive.org/
+
+Finish: 4.97 s DOMContentLoaded: 2.79 s load: 4.34 s
+Finish: 4.21 s DOMContentLoaded: 1.81 s load: 4.21 s
+Finish: 4.44 s DOMContentLoaded: 2.13 s load: 4.44 s
+
+
+https://stackoverflow.com/
+
+Finish: 5.49 s DOMContentLoaded: 1.20 s load: 4.77 s
+Finish: 5.33 s DOMContentLoaded: 769 ms load: 3.61 s
+Finish: 5.79 s DOMContentLoaded: 670 ms load: 4.26 s

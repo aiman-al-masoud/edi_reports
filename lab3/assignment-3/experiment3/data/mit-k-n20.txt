@@ -1,0 +1,46 @@
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking www.mit.edu (be patient).....done
+
+
+Server Software:        Apache
+Server Hostname:        www.mit.edu
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES256-GCM-SHA384,2048,256
+Server Temp Key:        ECDH P-256 256 bits
+TLS Server Name:        www.mit.edu
+
+Document Path:          /
+Document Length:        48257 bytes
+
+Concurrency Level:      1
+Time taken for tests:   2.910 seconds
+Complete requests:      20
+Failed requests:        0
+Keep-Alive requests:    20
+Total transferred:      973080 bytes
+HTML transferred:       965140 bytes
+Requests per second:    6.87 [#/sec] (mean)
+Time per request:       145.496 [ms] (mean)
+Time per request:       145.496 [ms] (mean, across all concurrent requests)
+Transfer rate:          326.56 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    7  30.0      0     134
+Processing:    37  139 131.9    111     613
+Waiting:       31  135 131.9    109     609
+Total:         37  145 142.6    111     613
+
+Percentage of the requests served within a certain time (ms)
+  50%    111
+  66%    146
+  75%    151
+  80%    204
+  90%    417
+  95%    613
+  98%    613
+  99%    613
+ 100%    613 (longest request)

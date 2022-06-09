@@ -1,0 +1,41 @@
+Analyze and discuss the impacts of caching policies implemented by different
+commercial/institutional websites on the Page Load Times. Consider websites that support
+HTTP/1.1 and HTTP/2 as well as unsecure and secure connections. Did you notice any expected
+or unexpected behavior
+
+
+Get PLT with and without cache on Firefox for each website (Disable Cache checkbox).
+And number of requests made to server with and without cache enabled.
+
+
+# Mainly HTTP1
+
+https://web.unipv.it/
+
+https://www.pythonanywhere.com/
+
+https://www.mit.edu/
+
+
+# Mainly HTTP2
+
+
+https://github.com/
+
+https://archive.org/
+
+https://stackoverflow.com/
+
+
+# Unsecure (HTTP1)
+
+http://maxgames.com/
+
+http://go.com/
+
+http://mclab.unipv.it/
+
+
+
+
+

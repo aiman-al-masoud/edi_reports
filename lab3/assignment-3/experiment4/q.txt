@@ -1,0 +1,32 @@
+Analyze and discuss the performance of different commercial/institutional websites obtained
+under different conditions using the nghttp and h2load tools. In the experiments with
+h2load analyze the role of the warm-up time. Did you notice any expected or unexpected
+behavior?
+
+Http2 only 
+
+https://github.com/
+
+https://archive.org/
+
+https://stackoverflow.com/
+
+
+
+h2load --warm-up-time 10 https://www.google.com --duration 10
+
+Warmup time is used by the benchmarking tool's client to start a connection with the 
+webserver, before actually beginning to transfer benchmark data, you can verify that some traffic
+is exchanged during the warmup phase using a sniffer such as Wireshark.
+
+When warmup time > 0, "time for connect" and "time to 1st byte" tend to become 0.
+
+
+
+
+
+
+nghttp -an https://website.com
+
+
+

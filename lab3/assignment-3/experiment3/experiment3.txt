@@ -1,0 +1,27 @@
+n: number of requests
+c: concurrency
+k: http keep alive
+
+
+ab -k -c 2 -n 20 https://web.unipv.it/
+
+
+Fixed number of request (n) and let c (concurrency) vary. 
+Only http1
+
+https://web.unipv.it/
+
+https://eu.pythonanywhere.com/
+
+https://www.mit.edu/
+
+
+
+1) It took much less to run the benchmark with concurrent request than without.
+
+
+2) Persistent connections (-k) also apparently reduce the overhead 
+
+
+
+
