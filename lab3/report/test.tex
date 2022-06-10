@@ -5,6 +5,8 @@
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
 \usepackage{multirow}
+\graphicspath{ {./images/} }
+
 
 \begin{document}
 
@@ -206,23 +208,72 @@ Options      & Average Time (seconds) \\ \hline
 
 \end{table}
 
+\clearpage 
 
 
 \section{nghttp and h2load}
 Among the tools that can be used to measure the performance of HTTP/2 servers are nghttp, which is an HTTP/2 client, and h2load, which is a benchmarking tool.
 
-
-\subsection{Methodology and experimental setup}
-%Discuss your methodological approach and the plan/setup of your experiments
-
-
 \subsection{The Role of Warmup Time in h2load}
 
 Warmup time is used by the benchmarking tool's client to start a connection with the 
-webserver, before actually beginning to transfer benchmark data, you can verify that some traffic is exchanged during the warmup phase using a sniffer such as Wireshark.
+webserver, before actually beginning to transfer benchmark data, you can verify that some traffic is exchanged during the warmup phase using a sniffer such as Wireshark, as figure 1 shows:
 
-When warmup time > 0, "time for connect" and "time to 1st byte" tend to become 0.
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{h2load-wireshark}
+\caption{captured during warmup time}
+\label{fig:figure1}
+\end{figure}
 
+
+The packets were captured during the warmup phase of the command:
+
+h2load --warm-up-time 1 https://github.com --duration 5 
+
+with 1 second of warmup time and 5 seconds for the duration of the actual benchmark.
+
+
+When warmup time is greater than 0, "time for connect" and "time to 1st byte" tend to become 0, as the following tables show:
+
+
+Without warmup time (warmup time = 0)
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+                  & min      & max      & mean     & sd   & +/- sd   \\ \hline
+time for request: & 0us      & 0us      & 0us      & 0us  & 0.00\%   \\ \hline
+time for connect: & 157.24ms & 157.24ms & 157.24ms & 0us  & 100.00\% \\ \hline
+time to 1st byte: & 227.56ms & 227.56ms & 227.56ms & 0us  & 100.00\% \\ \hline
+req/s             & 0.00     & 0.00     & 0.00     & 0.00 & 100.00\% \\ \hline
+\end{tabular}
+
+\caption{...}
+\label{fig:table4}
+
+\end{table}
+
+
+With warmup time = 1 second
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+                  & min      & max      & mean     & sd      & +/- sd   \\ \hline
+time for request: & 106.22ms & 164.90ms & 134.89ms & 14.35ms & 67.57\%  \\ \hline
+time for connect: & 0us      & 0us      & 0us      & 0us     & 0.00\%   \\ \hline
+time to 1st byte: & 0us      & 0us      & 0us      & 0us     & 0.00\%   \\ \hline
+req/s             & 7.40     & 7.40     & 7.40     & 0.00    & 100.00\% \\ \hline
+\end{tabular}
+
+\caption{...}
+\label{fig:table5}
+
+\end{table}
 
 
 
