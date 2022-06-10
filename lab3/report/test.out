@@ -1,12 +1,15 @@
 \BOOKMARK [1][-]{section.1}{Parallel Connections}{}% 1
-\BOOKMARK [2][-]{subsection.1.1}{HTTP/1 vs HTTP/2}{section.1}% 2
-\BOOKMARK [2][-]{subsection.1.2}{Methodology and experimental setup}{section.1}% 3
-\BOOKMARK [1][-]{section.2}{Caching Policies}{}% 4
-\BOOKMARK [2][-]{subsection.2.1}{Methodology and experimental setup}{section.2}% 5
-\BOOKMARK [1][-]{section.3}{Apache Benchmark}{}% 6
-\BOOKMARK [2][-]{subsection.3.1}{Methodology and experimental setup}{section.3}% 7
-\BOOKMARK [1][-]{section.4}{nghttp and h2load}{}% 8
-\BOOKMARK [2][-]{subsection.4.1}{The Role of Warmup Time in h2load}{section.4}% 9
-\BOOKMARK [2][-]{subsection.4.2}{Embedded Objects with nghttp}{section.4}% 10
-\BOOKMARK [1][-]{section.5}{Conclusions}{}% 11
-\BOOKMARK [1][-]{section.6}{References}{}% 12
+\BOOKMARK [2][-]{subsection.1.1}{Firefox's About Config}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{HTTP/1 vs HTTP/2}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Methodology and experimental setup}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Caching Policies}{}% 5
+\BOOKMARK [2][-]{subsection.2.1}{Remote vs Local}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.2}{Public vs Private}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.3}{Methodology and experimental setup}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{Apache Benchmark}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Methodology and experimental setup}{section.3}% 10
+\BOOKMARK [1][-]{section.4}{nghttp and h2load}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{The Role of Warmup Time in h2load}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.2}{Embedded Objects with nghttp}{section.4}% 13
+\BOOKMARK [1][-]{section.5}{Conclusions}{}% 14
+\BOOKMARK [1][-]{section.6}{References}{}% 15
