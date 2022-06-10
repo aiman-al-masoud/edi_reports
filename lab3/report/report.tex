@@ -287,10 +287,11 @@ req/s             & 7.40     & 7.40     & 7.40     & 0.00    & 100.00\% \\ \hlin
 Checking the Page Load Time of a website usually implies testing it out on a real browser; but nghttp, being a fully featured HTTP/2 client, supports downloading the embedded objects/assets of a web page, besides its html code, through the -a (--get-assets) option [\ref{article9}]. 
 
 
-This means that it is possible to use nghttp to approximate the time that it would take for a real web browser to download the assets of a page from a web server. 
+This means that it is possible to use nghttp to approximate the time that it would take for a real web browser to download the assets of a page from a web server.  
 
-The following tables represent the behaviors of a website (https://archive.org) when downloaded using nghttp, with and without the -a flag:
+This kind of test has been carried out for 3 HTTP/2 pages, and the dumps are available on the repository. [\ref{article7}]
 
+As an example, the following tables represent the behaviors of one of those websites (https://archive.org) when downloaded using nghttp, with and without the -a flag:
 
 
 \begin{table}[h!]
@@ -338,7 +339,7 @@ As one can see from the tables, the -a option can give a rough idea of the PLT o
 
 \section{Conclusions}
 
-The source code of this report, as well as that of the tests, and the data that was collected, is all available on the associated Github repository [\ref{article7}].
+The source code of this report, as well as that of the tests, and the data that was collected, is all available on the associated Github repository [\ref{article7}]. The data and scripts for each of the four sections of this report are organized in 4 different subfolders, within the /lab3/expriments/ directory[\ref{article7}]. 
 
 
 \section{References}
