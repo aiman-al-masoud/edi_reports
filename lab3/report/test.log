@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.21)  10 JUN 2022 12:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.21)  10 JUN 2022 14:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -193,29 +193,29 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 (./test.aux)
 \openout1 = `test.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
-1.
+0.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 \AtBeginShipoutBox=\box46
-Package hyperref Info: Link coloring OFF on input line 11.
+Package hyperref Info: Link coloring OFF on input line 10.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -228,9 +228,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count188
 )
-LaTeX Info: Redefining \ref on input line 11.
-LaTeX Info: Redefining \pageref on input line 11.
-LaTeX Info: Redefining \nameref on input line 11.
+LaTeX Info: Redefining \ref on input line 10.
+LaTeX Info: Redefining \pageref on input line 10.
+LaTeX Info: Redefining \nameref on input line 10.
 
 (./test.out) (./test.out)
 \@outlinefile=\write3
@@ -260,11 +260,11 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 19.
+(Font)              <12> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 19.
+(Font)              <8> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 19.
+(Font)              <6> on input line 18.
 
 [1
 
@@ -273,7 +273,7 @@ ination with the same identifier (name{page.1}) has been already used, duplicat
 e ignored
 <to be read again> 
                    \relax 
-l.71 \clearpage
+l.70 \clearpage
                 [1
 
 
@@ -282,76 +282,74 @@ l.71 \clearpage
 
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 75.
+(Font)              <7> on input line 74.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 75.
+(Font)              <5> on input line 74.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [2
 
-] [3] [4
-
-]
-<./images/h2load-wireshark.png, id=111, 1370.11874pt x 729.72626pt>
+] [3]
+<./images/h2load-wireshark.png, id=107, 1370.11874pt x 729.72626pt>
 File: ./images/h2load-wireshark.png Graphic file (type png)
 <use ./images/h2load-wireshark.png>
-Package pdftex.def Info: ./images/h2load-wireshark.png  used on input line 235.
+Package pdftex.def Info: ./images/h2load-wireshark.png  used on input line 233.
 
 (pdftex.def)             Requested size: 274.01889pt x 145.94266pt.
- [5
+ [4
 
- <./images/h2load-wireshark.png>] [6]
+ <./images/h2load-wireshark.png>] [5]
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
-50.
+48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \hbox (8.03214pt too wide) in paragraph at lines 350--351
+Overfull \hbox (8.03214pt too wide) in paragraph at lines 348--349
 [][]$\OT1/pcr/m/n/10 https : / / www . hobo-[]web . co . uk / your-[]website-[]
 design-[]should-[]load-[]in-[]4-[]seconds/$[] 
  []
 
 
-Overfull \hbox (121.53214pt too wide) in paragraph at lines 352--353
+Overfull \hbox (121.53214pt too wide) in paragraph at lines 350--351
 [][]$\OT1/pcr/m/n/10 https : / / www . computerworld . com / article / 2541429 
 / hacking-[]firefox-[]-[]the-[]secrets-[]of-[]about-[]config .
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 371.
-[7
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 369.
+[6
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 371.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 369.
  (./test.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 371.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 371.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 369.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 369.
 Package rerunfilecheck Info: File `test.out' has not changed.
 (rerunfilecheck)             Checksum: 7170BF6E861F0DC6571127CB767DEE7D;980.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 371.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 369.
  ) 
 Here is how much of TeX's memory you used:
- 5427 strings out of 483065
- 83569 string characters out of 5963550
- 340178 words of memory out of 5000000
+ 5426 strings out of 483065
+ 83563 string characters out of 5963550
+ 340275 words of memory out of 5000000
  20319 multiletter control sequences out of 15000+600000
  547862 words of font info for 51 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 34i,9n,29p,738b,307s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,9n,29p,738b,311s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb>
-Output written on test.pdf (8 pages, 199907 bytes).
+Output written on test.pdf (7 pages, 199661 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
- 157 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
+ 170 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 500000)
  126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
