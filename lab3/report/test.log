@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.21)  10 JUN 2022 11:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.21)  10 JUN 2022 12:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -289,7 +289,7 @@ l.89 F
 ] [2] [3
 
 ]
-<./images/h2load-wireshark.png, id=89, 1370.11874pt x 729.72626pt>
+<./images/h2load-wireshark.png, id=94, 1370.11874pt x 729.72626pt>
 File: ./images/h2load-wireshark.png Graphic file (type png)
 <use ./images/h2load-wireshark.png>
 Package pdftex.def Info: ./images/h2load-wireshark.png  used on input line 224.
@@ -297,62 +297,52 @@ Package pdftex.def Info: ./images/h2load-wireshark.png  used on input line 224.
 (pdftex.def)             Requested size: 274.01889pt x 145.94266pt.
  [4
 
- <./images/h2load-wireshark.png>]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
-90.
+ <./images/h2load-wireshark.png>] [5]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
+43.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \hbox (8.03214pt too wide) in paragraph at lines 290--291
+Overfull \hbox (8.03214pt too wide) in paragraph at lines 343--344
 [][]$\OT1/pcr/m/n/10 https : / / www . hobo-[]web . co . uk / your-[]website-[]
 design-[]should-[]load-[]in-[]4-[]seconds/$[] 
  []
 
 
-Overfull \hbox (121.53214pt too wide) in paragraph at lines 292--293
+Overfull \hbox (121.53214pt too wide) in paragraph at lines 345--346
 [][]$\OT1/pcr/m/n/10 https : / / www . computerworld . com / article / 2541429 
 / hacking-[]firefox-[]-[]the-[]secrets-[]of-[]about-[]config .
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 307.
-[5
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 364.
+[6
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 307.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 364.
  (./test.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 307.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 307.
-
-
-Package rerunfilecheck Warning: File `test.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `test.out':
-(rerunfilecheck)             Before: 50B1B138AC8BB619CAC15AD269455FAA;735
-(rerunfilecheck)             After:  D2F460FC26C9F7CD7E2F856B0703ED40;651.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 307.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 364.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 364.
+Package rerunfilecheck Info: File `test.out' has not changed.
+(rerunfilecheck)             Checksum: 730B590D87321FE39FF6A6F8AD5F13B0;776.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 364.
  ) 
 Here is how much of TeX's memory you used:
- 5409 strings out of 483065
- 83375 string characters out of 5963550
- 336932 words of memory out of 5000000
- 20311 multiletter control sequences out of 15000+600000
+ 5420 strings out of 483065
+ 83473 string characters out of 5963550
+ 338040 words of memory out of 5000000
+ 20316 multiletter control sequences out of 15000+600000
  547862 words of font info for 51 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  34i,9n,29p,749b,309s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.4.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
-imes/utmr8a.pfb>
-Output written on test.pdf (6 pages, 194476 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmr8a.pfb>
+Output written on test.pdf (7 pages, 198764 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 94 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 102 words of extra memory for PDF output out of 10000 (max. 10000000)
 

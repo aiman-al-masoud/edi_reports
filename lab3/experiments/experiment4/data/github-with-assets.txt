@@ -1,0 +1,21 @@
+***** Statistics *****
+
+Request timing:
+  responseEnd: the  time  when  last  byte of  response  was  received
+               relative to connectEnd
+ requestStart: the time  just before  first byte  of request  was sent
+               relative  to connectEnd.   If  '*' is  shown, this  was
+               pushed by server.
+      process: responseEnd - requestStart
+         code: HTTP status code
+         size: number  of  bytes  received as  response  body  without
+               inflation.
+          URI: request URI
+
+see http://www.w3.org/TR/resource-timing/#processing-model
+
+sorted by 'complete'
+
+id  responseEnd requestStart  process code size request path
+ 13   +131.71ms       +104us 131.60ms  200  35K /
+ 15   +168.10ms    +102.26ms  65.84ms  200  18K /webgl-globe/data/data.json

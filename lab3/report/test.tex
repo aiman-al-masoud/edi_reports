@@ -217,7 +217,7 @@ Among the tools that can be used to measure the performance of HTTP/2 servers ar
 \subsection{The Role of Warmup Time in h2load}
 
 Warmup time is used by the benchmarking tool's client to start a connection with the 
-webserver, before actually beginning to transfer benchmark data, you can verify that some traffic is exchanged during the warmup phase using a sniffer such as Wireshark, as figure 1 shows:
+webserver, before actually beginning to transfer benchmark data [\ref{article8}], you can verify that some traffic is exchanged during the warmup phase using a sniffer such as Wireshark, as figure 1 shows: 
 
 \begin{figure}[h!]
 \centering
@@ -276,11 +276,64 @@ req/s             & 7.40     & 7.40     & 7.40     & 0.00    & 100.00\% \\ \hlin
 \end{table}
 
 
+\subsection{Embedded Objects with nghttp}
 
+
+Checking the Page Load Time of a website usually implies testing it out on a real browser; but nghttp, being a fully featured HTTP/2 client, supports downloading the embedded objects/assets of a web page, besides its html code, through the -a (--get-assets) option [\ref{article9}]. 
+
+
+This means that it is possible to use nghttp to approximate the time that it would take for a real web browser to download the assets of a page from a web server. 
+
+The following tables represent the behaviors of a website (https://archive.org) when downloaded using nghttp, with and without the -a flag:
+
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+id & responseEnd & requestStart & process  & code & size & request path \\ \hline
+13 & +308.00ms   & +175us       & 307.82ms & 200  & 1K   & /            \\ \hline
+
+\end{tabular}
+
+\caption{...}
+\label{fig:table6}
+\end{table}
+
+
+\begin{table}[h!]
+\centering
+
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+id & responseEnd & requestStart & process  & code & size & request path                                                                          \\ \hline
+13 & +408.96ms   & +151us       & 408.81ms & 200  & 1K   & /                                                                                     \\ \hline
+15 & +717.76ms   & +409.29ms    & 308.47ms & 200  & 318K & /offshoot\_assets/index.56c7d2ac8e12.css                                              \\ \hline
+17 & +717.97ms   & +409.30ms    & 308.67ms & 200  & 1K   & /offshoot\_assets/vendor/lit@2.0.2/polyfill-support.js                                \\ \hline
+19 & +718.15ms   & +409.30ms    & 308.85ms & 200  & 1K   & /offshoot\_assets/vendor/@webcomponents/webcomponentsjs@2.6.0/webcomponents-loader.js \\ \hline
+21 & +718.31ms   & +409.30ms    & 309.01ms & 200  & 2K   & /offshoot\_assets/js/webpack-runtime.278ae0d32b8bdea6e95a.js                          \\ \hline
+23 & +1.95s      & +409.30ms    & 1.54s    & 200  & 103K & /offshoot\_assets/js/index.2d907721752dd736f0e5.js                                    \\ \hline
+
+
+\end{tabular}%
+}
+\caption{...}
+\label{fig:table7}
+\end{table}
+
+
+As one can see from the tables, the -a option can give a rough idea of the PLT of the page on an actual browser, keeping in mind that on an actual browser the "perceived" PLT will always be higher, as this kind of test doesn't take into account the time needed for the web engine to render the content and run the scripts.
 
 
 % idk, latex just needs this here for bibliography linking to work properly:
 \clearpage
+
+
+\section{Conclusions}
+
+The source code of this report, as well as that of the tests, and the data that was collected, is all available on the associated Github repository [\ref{article7}].
 
 
 \section{References}
@@ -300,6 +353,10 @@ req/s             & 7.40     & 7.40     & 7.40     & 0.00    & 100.00\% \\ \hlin
 \item \label{article6} \url{http://manpages.ubuntu.com/manpages/trusty/man1/xdotool.1.html} 
 
 \item \label{article7} \url{https://github.com/aiman-al-masoud/edi_reports} 
+
+\item \label{article8} \url{https://nghttp2.org/documentation/h2load.1.html} 
+
+\item \label{article9} \url{https://nghttp2.org/documentation/nghttp.1.html} 
 
 
 \end{enumerate}

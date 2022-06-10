@@ -1,0 +1,25 @@
+***** Statistics *****
+
+Request timing:
+  responseEnd: the  time  when  last  byte of  response  was  received
+               relative to connectEnd
+ requestStart: the time  just before  first byte  of request  was sent
+               relative  to connectEnd.   If  '*' is  shown, this  was
+               pushed by server.
+      process: responseEnd - requestStart
+         code: HTTP status code
+         size: number  of  bytes  received as  response  body  without
+               inflation.
+          URI: request URI
+
+see http://www.w3.org/TR/resource-timing/#processing-model
+
+sorted by 'complete'
+
+id  responseEnd requestStart  process code size request path
+ 13   +408.96ms       +151us 408.81ms  200   1K /
+ 15   +717.76ms    +409.29ms 308.47ms  200  318 /offshoot_assets/index.56c7d2ac8e12.css
+ 17   +717.97ms    +409.30ms 308.67ms  200   1K /offshoot_assets/vendor/lit@2.0.2/polyfill-support.js
+ 19   +718.15ms    +409.30ms 308.85ms  200   1K /offshoot_assets/vendor/@webcomponents/webcomponentsjs@2.6.0/webcomponents-loader.js
+ 21   +718.31ms    +409.30ms 309.01ms  200   2K /offshoot_assets/js/webpack-runtime.278ae0d32b8bdea6e95a.js
+ 23      +1.95s    +409.30ms    1.54s  200 103K /offshoot_assets/js/index.2d907721752dd736f0e5.js
